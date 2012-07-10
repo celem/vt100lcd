@@ -1,0 +1,42 @@
+vt100lcd valid VT100/ANSI sequences
+(NOTE: No spaces - included just for easy reading)
+
+RETURN		Cursor to leftmost of current line
+LINEFEED	Cursor down
+ESC c           Resets LCD
+ESC D           Cursor Down
+ESC M           Cursor Up
+ESC E           Move cursor to start of next line
+
+ESC [ A		Cursor up one line (arrow key)
+ESC [ B		Cursor down one line (arrow key)
+ESC [ C		Cursor right one column (arrow key)
+ESC [ D		Cursor left one column (arrow key)
+ESC [ H		Cursor to HOME 1;1
+ESC [ s		Save cursor position
+ESC [ u		Restore to saved cursor position
+ESC [ m  	All attributes off
+
+ESC [ Pn A      Cursor up Pn lines
+ESC [ Pn F      Cursor up to column 1 of Pn lines 
+ESC [ Pn B      Cursor down Pn lines
+ESC [ Pn E      Cursor down column 1 of Pn lines
+ESC [ Pn C      Cursor right Pn characters
+ESC [ Pn D      Cursor left Pn characters
+ESC [ Pn G      Cursor to column Pn of current line
+ESC [ 2 J		Erase Screen and home cursor
+ESC [ Pl;PcH    Direct cursor addressing, where Pl is line#, 
+			Pc is column# (topleft = 1;1)
+ESC [ Pl;Pcf    Same as above
+
+ESC [ = Pn h	Set Mode (LCD lines), Pn 2 = 16X2, 4 = 16X4
+
+ESC [ 0 m  	All attributes off (underscore cursor off)
+ESC [ 4 m       Underscore on
+
+ESC [ 0 c       Report terminal type
+ESC [ 5 n	Device Status Report, reports max qty lcd lines (1s based)
+ESC [ 6 n	Device Status Report, reports cursor position (1s based)
+
+ESC [ 0 q	Turn LCD's LED 1 off
+ESC [ 1 q	Turn LCD's LED 1 on

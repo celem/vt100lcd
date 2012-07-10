@@ -1,0 +1,17 @@
+G04 start of page 4 for group 2 idx 2 *
+G04 Title: vt100lcd84, outline *
+G04 Creator: pcb 20091103 *
+G04 CreationDate: Tue 01 May 2012 10:21:43 PM GMT UTC *
+G04 For: ecomer *
+G04 Format: Gerber/RS-274X *
+G04 PCB-Dimensions: 334646 161417 *
+G04 PCB-Coordinate-Origin: lower left *
+%MOIN*%
+%FSLAX25Y25*%
+%LNOUTLINE*%
+%ADD12C,0.0100*%
+G54D12*X9843Y151574D02*X324803D01*
+X9843D02*Y9842D01*
+X324803D01*
+Y151574D01*
+M02*
